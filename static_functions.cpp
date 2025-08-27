@@ -3,7 +3,7 @@ using namespace std;
 
 class Counter {
 private:
-    static int count=0;  // static data member
+    static int count;  // static data member
 public:
     Counter() { count++; }
 
