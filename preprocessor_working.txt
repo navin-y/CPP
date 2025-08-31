@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+#if defined(_WIN32)
+    cout << "Running on Windows!" << endl;
+#elif defined(__linux__)
+    cout << "Running on Linux!" << endl;
+#else
+#error "Unsupported platform!"
+#endif
+    return 0;
+}
